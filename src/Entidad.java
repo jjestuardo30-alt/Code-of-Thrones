@@ -5,4 +5,12 @@ public abstract class Entidad {
     private int puntosVida;
     private CartaEspecial[] cartas;
 
+    public Entidad(String nombre, int nivel, int puntosVida) {
+        this.nombre = nombre;
+        this.nivel = nivel;
+        this.puntosVida = puntosVida;
+        this.cartas = new CartaEspecial[5];
+
+    }
+
 }
