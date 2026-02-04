@@ -56,4 +56,20 @@ public abstract class Entidad {
 
     public abstract int calcularDefensa();
 
+    public void cartaCuracionRapida() {
+        int curacion = 20 + (getNivel() * 2);
+        setPuntosVida(getPuntosVida() + curacion);
+        System.out.println(getNombre() + "se cura" + curacion + "puntos de vida");
+    }
+
+    public void cartaGolpeCritico() {
+        System.out.println(getNombre() + "intenta un GOLPE CRITICO!");
+
+    }
+
+    public void mostrarEstado() {
+        System.out.println(getNombre() + "Nivel: " + getNivel() + "Vida: " + getPuntosVida());
+
+    }
+
 }
