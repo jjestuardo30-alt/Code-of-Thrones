@@ -1,3 +1,3 @@
-public class Carta Especial {
+public class CartaEspecial {
     
 }
