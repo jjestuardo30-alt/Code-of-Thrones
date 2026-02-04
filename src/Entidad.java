@@ -39,4 +39,17 @@ public abstract class Entidad {
         }
     }
 
+    public void recibirDaño(int cantidad) {
+        int defensa = calcularDefensa();
+        int dañoReal = cantidad - defensa;
+
+        if (dañoReal > 0) {
+            System.out.println(nombre + "recibe" + dañoReal + "puntos de daño");
+            setPuntosVida(getPuntosVida() - dañoReal);
+
+        } else {
+            System.out.println(nombre + "bloquea todo el daño");
+        }
+    }
+
 }
