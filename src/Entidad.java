@@ -52,4 +52,8 @@ public abstract class Entidad {
         }
     }
 
+    public abstract void atacar();
+
+    public abstract int calcularDefensa();
+
 }
