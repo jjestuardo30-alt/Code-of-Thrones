@@ -11,4 +11,32 @@ public abstract class Entidad {
 
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getNivel() {
+        return nivel;
+    }
+
+    public int getPuntosVida() {
+        return puntosVida;
+    }
+
+    public void setPuntosVida(int nuevaVida) {
+        if (nuevaVida < 0) {
+            this.puntosVida = 0;
+            System.out.println(nombre + "Has sido derrotado");
+        }
+
+        else if (nuevaVida > 1000) {
+            this.puntosVida = 1000;
+            System.out.println(nombre + "Has alcanzado maximo de vida");
+        }
+
+        else {
+            this.puntosVida = nuevaVida;
+        }
+    }
+
 }
