@@ -43,4 +43,12 @@ public class Guerrero extends Entidad {
         System.out.println("Ignora el 50% de la defensa enemiga");
     }
 
+    public void mostrarResistencia() {
+        System.out.println("Resistencia actual: " + resistencia);
+    }
+
+    public int getResistencia() {
+        return resistencia;
+    }
+
 }
