@@ -1,5 +1,5 @@
 
-public class Mounstro extends Entidad {
+public class Mounstro extends Entidad implements Ataque {
     private int ferocidad;
 
     public Mounstro(String nombre, int nivel, int puntosVida, int ferocidad) {
@@ -49,4 +49,15 @@ public class Mounstro extends Entidad {
     public int getFerocidad() {
         return ferocidad;
     }
+
+    @Override
+    public void atacarFisico() {
+        System.out.println(getNombre() + " golpea brutalmente con sus garras!");
+    }
+
+    @Override
+    public void atacarVerinoso() {
+        System.out.println(getNombre() + " muerde con veneno salvaje!");
+    }
+
 }

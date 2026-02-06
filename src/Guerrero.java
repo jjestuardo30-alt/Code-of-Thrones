@@ -1,4 +1,4 @@
-public class Guerrero extends Entidad {
+public class Guerrero extends Entidad implements Ataque {
     private int resistencia;
 
     public Guerrero(String nombre, int nivel, int puntosVida, int resistencia) {
@@ -49,6 +49,16 @@ public class Guerrero extends Entidad {
 
     public int getResistencia() {
         return resistencia;
+    }
+
+    @Override
+    public void atacarFisico() {
+        System.out.println(getNombre() + " realiza un ATAQUE FÍSICO con su espada!");
+    }
+
+    @Override
+    public void atacarVerinoso() {
+        System.out.println(getNombre() + " intenta un ataque verinoso, pero no domina esta técnica.");
     }
 
 }
