@@ -19,4 +19,28 @@ public class Guerrero extends Entidad {
 
     }
 
+    public void cartaFuriaBerserker() {
+        System.out.println(getNombre() + "Esta en furia Berserker!");
+        resistencia += 10;
+        recibirDaño(15);
+        System.out.println("resistencia aumentada a" + resistencia);
+
+    }
+
+    public void cartaDefensaTotal() {
+        System.out.println(getNombre() + "adopta DEFENSA TOTAL");
+        System.out.println("Defensa duplicada por 1 turno");
+
+    }
+
+    public void cartaAtaqueGiratorio() {
+        System.out.println(getNombre() + " realiza un ATAQUE GIRATORIO");
+        System.out.println("Golpea a todos los enemigos cercanos");
+    }
+
+    public void cartaRomperDefensas() {
+        System.out.println(getNombre() + " usa ROMPER DEFENSAS");
+        System.out.println("Ignora el 50% de la defensa enemiga");
+    }
+
 }
